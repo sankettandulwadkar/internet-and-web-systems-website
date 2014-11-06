@@ -1,0 +1,160 @@
+.centeredImage
+{
+    text-align:center;
+    margin-top:0px;
+    margin-bottom:0px;
+    padding:0px;
+}
+
+.bs-example
+{
+    margin: 20px;
+}
+
+.biotext
+{
+	text-align: center;
+	margin-left: 30px;
+    margin-right: 30px;
+    font-family: Times New Roman, Times, serif;
+    font-size: 16px;
+    /* color: #297ACC; */
+}
+
+.contact-info
+{
+	text-align: center;
+	/* color: #297ACC; */
+}
+
+.guestbook
+{
+	text-align: center;
+}
+
+.object-size
+{
+	 /* background: #800033;  */
+	width: 100%;
+	height: 600px;
+}
+
+.image-class
+{
+	 width:250px;
+	 height:300px;
+	 text-align: middle;
+}
+
+strong{
+	font-weight: bold;
+	/* color: blue; */
+}
+
+.calculator{
+	text-align: left;
+}
+
+#myTable
+{
+	text-align: center;
+
+}
+
+select {
+    border: 0;
+    width: 100%;
+}
+
+#createTable
+{
+	text-align: center;
+}
+
+/*New CSS*/
+
+body {
+  /*background: #303030;*/
+  font-family: Times New Roman, Times, serif;
+}
+.wrapper {
+  background: white;
+  margin: auto;
+  padding: 1em;
+  width: auto;
+  height: 600px;
+}
+h1 {
+  text-align: center;
+}
+ul.tabs {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ul.tabs li {
+  border: gray solid 1px;
+  border-bottom: none;
+  float: left;
+  margin: 0 .25em 0 0;
+  padding: .25em .5em;
+}
+ul.tabs li a {
+  color: gray;
+  font-weight: bold;
+  text-decoration: none;
+}
+ul.tabs li.active {
+  background: #303030;
+}
+ul.tabs li.active a {
+  color: white;
+}
+.clr {
+  clear: both;
+}
+article {
+  border-top: gray solid 1px;
+  padding: 0 1em;
+}
+
+/*New button CSS*/
+
+button {
+   border-top: 1px solid #96d1f8;
+   background: #65a9d7;
+   background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+   background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+   background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+   background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+   background: -o-linear-gradient(top, #3e779d, #65a9d7);
+   padding: 5px 10px;
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   border-radius: 8px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 14px;
+   font-family: Georgia, serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+button:hover {
+   border-top-color: #28597a;
+   background: #28597a;
+   color: #ccc;
+   }
+button:active {
+   border-top-color: #1b435e;
+   background: #1b435e;
+   }
+
+/*Table border   */
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
