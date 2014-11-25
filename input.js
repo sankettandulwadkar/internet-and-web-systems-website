@@ -28,8 +28,7 @@ $(document).ready(function() {
     $("#tab5").append('<p class="contact-info"><strong>LinkedIn</strong> : <a target="_blank" href="https://www.linkedin.com/in/sankettandulwadkar/">Sanket Tandulwadkar</a><br> </p>');
     $("#tab5").append('<p class="contact-info"><strong>Facebook</strong> : <a target="_blank" href="https://www.facebook.com/sankettandulwadkar">Sanket Tandulwadkar</a> </p>');
     $("#tab5").append('<p class="contact-info"><strong>Personal Website</strong> : <a target="_blank" href="https://www.sankettandulwadkar.com">Sanket Tandulwadkar</a> </p>');
-
-    $("#tab6").append("<p>Static Table here</p>")    
+   
 
     $("#guestbook_firstName").keypress(function(event){
         var inputValue = event.which;
