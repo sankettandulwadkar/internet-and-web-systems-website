@@ -1,7 +1,7 @@
 $(document).ready(function(){ 
 	
 	$.getJSON("http://jsonip.com?callback=?", function (data) {
-    	console.log("Your ip: ", data);
+    	// console.log("Your ip: ", data);
     	document.getElementById("ip_address").value = data.ip;
 	});
 
@@ -18,12 +18,16 @@ $(document).ready(function(){
 	    document.getElementById("longitude").value = position.coords.longitude;	
 	}
 
+	getLocation();
+
 	$("#report").click(function(){
 
 			var emailId = prompt("Enter your email id to send the issue to the creator");
 		
-		if(emailId == "")
-			emailId = "sankettandulwadkar@gmail.com";
+		if(emailId == null)
+			return alert("Action was canceled!");
+		if(emailId === "")
+			return alert("No emailID entered!")
 
 		$.ajax({
 		  type: "POST",
