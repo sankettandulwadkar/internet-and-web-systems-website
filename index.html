@@ -6,6 +6,7 @@
           <title>Sanket Tandulwadkar - Home Page</title>
       <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.3/jquery.mobile.min.js"></script>   
       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
       <link rel="stylesheet" type="text/css" href="style.css">
       <script type="text/javascript" src="input.js"></script>
       <script type="text/javascript" src="guestbook.js"></script>
@@ -43,6 +44,7 @@
               <li><a href="#tab4" data-toggle="tab" class="tab-css">Calculator</a></li>
               <li><a href="#tab5" data-toggle="tab" class="tab-css">Contact Me</a></li>
               <li><a href="#tab6" data-toggle="tab" class="tab-css">Maps</a></li>
+              <li><a href="#tab7" data-toggle="tab" class="tab-css">User Information</a></li>
             </ul>
             <div class="clr"></div>
         <section class="block">
@@ -100,8 +102,69 @@
 
             </article>
 
+            <article id="tab7">
+              <br><br><br><br><br>
+              <table id="Static_table" border="1" border-color: "white" border-bottom-color="blue"  align ="center"  >
+              <tr>
+                
+                 <th> OS Name</th>
+              
+                <td><input readonly="readonly" type= "text" name="os_name" id="os_name" width ="100"></td>
+              </tr>
+              <tr> 
+              <th> OS Version </th>
+              <td><input readonly="readonly" type= "text" name="os_version" id="os_version" width ="100"></td>
+              </tr>
+              <tr> 
+              <th> Browser Name </th>
+              <td><input readonly="readonly" type= "text" name="browser_name" id="browser_name" width ="100"></td>
+              </tr>
+              <tr> 
+              <th> Browser Version </th>
+              <td><input readonly="readonly" type= "text" name="browser_version" id="browser_version" width ="100"></td>
+              </tr>
+              <tr> 
+              <th> User Agent </th>
+              <td><input readonly="readonly" type= "text" name="userAgent" id="userAgent" width ="100"></td>
+              </tr>
+              <tr> 
+              <th> App Version </th>
+              <td><input readonly="readonly" type= "text" name="appVersion" id="appVersion" width ="100"></td>
+              </tr>
+              <tr> 
+              <th> Platform </th>
+              <td><input readonly="readonly" type= "text" name="platform" id="platform" width ="100"></td>
+              </tr>
+              <tr> 
+              <th> Vendor </th>
+              <td><input readonly="readonly" type= "text" name="vendor" id="vendor" width ="100"></td>
+              </tr>
+              <tr> 
+              <th> IP Adress </th>
+              <td><input readonly="readonly" type= "text" name="ip_address" id="ip_address" width ="100"></td>
+              </tr>
+              <tr> 
+              <th> Longitude </th>
+              <td><input readonly="readonly" type= "text" name="longitude" id="longitude" width ="100"></td>
+              </tr>
+              <tr> 
+              <th> Latitude </th>
+              <td><input readonly="readonly" type= "text" name="latitude" id="latitude" width ="100"></td>
+              </tr>
+
+            </table>
+              <br><br><br>
+              <div align="center" id="report">
+                  <button type="button" id="report">Report</button>
+              </div>
+
+            </article>
+
         </section>
       </section>
+      <footer class="footer">
+          <p align="center"><a href="http://www.cs.uml.edu/~standulw/513_f2014/hw5/">Move to Desktop site</a></p>
+      </footer>
   </body>
 
 </html>

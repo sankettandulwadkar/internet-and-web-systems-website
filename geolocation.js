@@ -1,30 +1,53 @@
-//$(document).ready(function(){
-
-// 	$.ajax({ 
-// 	  url: 'https://freegeoip.net/json/', 
-// 	  type: 'POST', 
-// 	  dataType: 'jsonp',
-// 	  success: function(location) {
-// 	    // example where I update content on the page.
-// 	    // $('#city').html(location.city);
-// 	    // $('#region-code').html(location.region_code);
-// 	    // $('#region-name').html(location.region_name);
-// 	    // $('#areacode').html(location.areacode);
-// 	    console.log("IP : ",location.ip);
-// 	    // $('#zipcode').html(location.zipcode);
-// 	    console.log("Longitude : ", location.longitude);
-// 	    console.log("Latitude : ", location.latitude);
-// 	    // $('#country-name').html(location.country_name);
-// 	    // $('#country-code').html(location.country_code);
-// 	  }
-// 	});
-
-// });
-
 $(document).ready(function(){ 
 	
 	$.getJSON("http://jsonip.com?callback=?", function (data) {
-    	console.log("Your ip: ", data.ip);
+    	console.log("Your ip: ", data);
+    	document.getElementById("ip_address").value = data.ip;
+	});
+
+	function getLocation() {
+	    if (navigator.geolocation) {
+	        navigator.geolocation.getCurrentPosition(showPosition);
+	    } else { 
+	        x.innerHTML = "Geolocation is not supported by this browser.";
+	    }
+	}
+
+	function showPosition(position) {
+	    document.getElementById("latitude").value = position.coords.latitude;
+	    document.getElementById("longitude").value = position.coords.longitude;	
+	}
+
+	$("#report").click(function(){
+
+			var emailId = prompt("Enter your email id to send the issue to the creator");
+		
+		if(emailId == "")
+			emailId = "sankettandulwadkar@gmail.com";
+
+		$.ajax({
+		  type: "POST",
+		  url: "https://mandrillapp.com/api/1.0/messages/send.json",
+		  data: {
+		    "key": "S9bNgeUvVCup29AiJKvRyQ",
+		    "message": {
+		      "from_email": emailId,
+		      "to": [
+		          {
+		            "email": "sankettandulwadkar@gmail.com",
+		            "type": "to"
+		          }
+		        ],
+		      "autotext": "true",
+		      "subject": "Issue with my information",
+		      "html": "Hi, I wanted to inform you that there is an issue with my information. Could you please have a look into it? Thank you!"
+		    }
+		  }
+		 }).done(function(response) {
+		   alert("Mail sent!");
+		 }).fail(function(error) {
+    		alert( "Error : " + error.statusText);
+  		});
 	});
 
 	

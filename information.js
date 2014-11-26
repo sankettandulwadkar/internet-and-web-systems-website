@@ -90,14 +90,22 @@ $(document).ready(function(){
     vendor = 'navigator.vendor = ' + navigator.vendor;
 
     
-    console.log("os_name" + os_name);
-    console.log("os_version" + os_version);
-    console.log("browser_name" + browser_name);
-    console.log("browser_version" + browser_version);
-    console.log("userAgent" + userAgent);
-    console.log("appVersion" + appVersion);
-    console.log("platform" + platform);
-    console.log("vendor" + vendor);
+    document.getElementById("os_name").value = e.os.name;
+    document.getElementById("os_version").value = e.os.version;
+    document.getElementById("browser_name").value = e.browser.name;
+    document.getElementById("browser_version").value = e.browser.version;
+    document.getElementById("userAgent").value = navigator.userAgent;
+    document.getElementById("appVersion").value = navigator.appVersion;
+    document.getElementById("platform").value = navigator.platform;
+    document.getElementById("vendor").value = navigator.vendor;
+    // console.log("os_name" + os_name);
+    // console.log("os_version" + os_version);
+    // console.log("browser_name" + browser_name);
+    // console.log("browser_version" + browser_version);
+    // console.log("userAgent" + userAgent);
+    // console.log("appVersion" + appVersion);
+    // console.log("platform" + platform);
+    // console.log("vendor" + vendor);
     
 }());
 
