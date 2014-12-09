@@ -1,14 +1,19 @@
-Work division:
-Anuradha : Getting User Information
-Sanket : Integrating Maps for finding dealers
-Nrupen : Build the mobile APK and the moving to desktop 
+Internet and WebSystems I
 
-1) We get the IP address of the client by using jsonip.com and the geolocation using navigator of the browser. We get the remaining information about the client i.e. os version, os type, etc from navigator. We are using mandrillapp.com to send email to the creator, if the client wants report the user information. We have used these IP address is location based and is available only when client okays the use of sharing location and mandrillapp is the best way to send mails to a creator using only javascript. 
+Project Members: 
+Sanket [01408077]
+Anuradha
+Nrupen [01382247]
 
-2) For integrating maps, we are using Google Places API because that is the best way to find and point to anything available in the world. We have used textSearch and getDetails functions of the API to get the dealers the client wants. We have used jQuery whenever we felt the need to attend to tags using ids or classes or for click functionalities. 
+All the necessary files are included herewith.
 
-3)To build mobile APK, we used Phonegap. And to move to mobile site, we have added the link to our website on cs.uml.edu as the footer.
+1)  We have borrowed jQuery for javascript coding only where deemed necessary by us. We have used jsonip.com for IP address of the user. IP address is dynamically obtained from this website. To send report to the creator(i.e. us), we have user madrillapp.com which sends mail using AJAX call keeping mailing for reports strictly javascript based. Madrillapp just sends the mail through their SMTP server and does not do anything else. For Maps, we have used Google Places API. It provides with the specific car dealers in a given radius. It also provides information about the dealers. We have only used the hosted API, all the functionalities have be written by us. For guestbook, we have used idiorm.php to connect to the database and brolmo guestbook styling. 
 
-4)We had added the APK here. And the link for the desktop site is
+2)  To take advantage/use our assignment/project, the only two restrictions are the website MUST be weblab.cs.uml.edu, since our database is based off of weblab; and internet connection is a MUST. We use internet connection for Maps, IP address, reporting, mailing, jQuery library.
 
-http://www.cs.uml.edu/~standulw/513_f2014/hw5/
+3)	Internet is a big limitation which seems difficult to be removed. Integrating PHP within an HTML file was a challenge and hence we have provided a link to get to the Guest Book. One more important issue we faced was that lcoation enabling did not work with Google Chrome browser. Please make sure you have location services option enabled!
+
+4)	Two features we would like to emphasize are the dynamic calculator and Maps. Dynamic calculator helps a user to compare any number and any type of car. We believe we have taken complete advantage of Google Places API and created a very interactive and clean Maps to find any specific car dealers around you.
+
+Link : http://weblab.cs.uml.edu/~standulw/513_f2014/final/
+

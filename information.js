@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-
+//finding information about the user browser and user information
 (function () {
     'use strict';
     

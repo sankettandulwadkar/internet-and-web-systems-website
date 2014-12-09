@@ -1,5 +1,5 @@
 $(document).ready(function() {
-
+    //this is for tabs in the webpage
   	$(function(){
           $('ul.tabs li:first').addClass('active');
           $('.block article').hide();
@@ -29,86 +29,5 @@ $(document).ready(function() {
     $("#tab5").append('<p class="contact-info"><strong>Facebook</strong> : <a target="_blank" href="https://www.facebook.com/sankettandulwadkar">Sanket Tandulwadkar</a> </p>');
     $("#tab5").append('<p class="contact-info"><strong>Personal Website</strong> : <a target="_blank" href="https://www.sankettandulwadkar.com">Sanket Tandulwadkar</a> </p>');
    
-
-    $("#guestbook_firstName").keypress(function(event){
-        var inputValue = event.which;
-        //if digits or not a space then don't let keypress work.
-        if((inputValue > 47 && inputValue < 58)){
-            event.preventDefault();
-        }
-    });
-
-
-    $("#guestbook_lastName").keypress(function(event){
-        var inputValue = event.which;
-        //if digits or not a space then don't let keypress work.
-        if((inputValue > 47 && inputValue < 58)){
-            event.preventDefault();
-        }
-    });
-
-
-    // $("#guestbook_email").keypress(function(event){
-    //     var inputValue = event.which;
-    //     //if digits or not a space then don't let keypress work.
-    //     if((inputValue > 47 && inputValue < 58)){
-    //         event.preventDefault();
-    //     }
-    // });
-
-    function validateEmail() {
-
-        var x = document.getElementById("guestbook_email").value;
-        var atpos = x.indexOf("@");
-        var dotpos = x.lastIndexOf(".");
-        if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
-            alert("Not a valid e-mail address");
-            return false;
-        }
-    }   
-
-    function validateName()
-    {
-        var first_name = document.getElementById("guestbook_firstName").value;
-        var last_name = document.getElementById("guestbook_lastName").value;
-        var email_adress = document.getElementById("guestbook_email").value;
-        if(first_name=="" || last_name=="" || email_adress=="")
-        {
-            alert("Please enter all fields");
-            return false;
-        }
-    }
-
-    function isOneChecked() {
-      alert("Here");  
-      var chx = document.getElementsByTagName('input');
-      for (var i=0; i<chx.length; i++) {
-        
-        if (chx[i].type == 'radio' && chx[i].checked) {
-          return true;
-        } 
-      }
-      return false;
-    }
-
-
-    $("#guestbook_submit").click(function(){
-        var name_validation, email_validation, radio_validation;
-
-        name_validation = validateName();
-        email_validation = validateEmail();
-        radio_validation = isOneChecked();
-
-        if(name_validation && email_validation && radio_validation)
-        {
-            alert("Submitting");
-        }
-        else
-        {
-            alert("Not Submitting");
-        }
-            
-
-    });
 
 });

@@ -20,6 +20,7 @@ $(document).ready(function(){
 
 	getLocation();
 
+	//reporting incorrect information using mandrillapp
 	$("#report").click(function(){
 
 			var emailId = prompt("Enter your email id to send the issue to the creator");
