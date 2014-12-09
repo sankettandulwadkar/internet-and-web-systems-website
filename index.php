@@ -23,7 +23,7 @@ if(isset($_GET['tkn'])){
 	}
 
 	// Invalid token. Redirect back to the login form.
-	redirect('index.php');
+	redirect('index.html');
 }
 
 
@@ -42,7 +42,7 @@ if(isset($_GET['logout'])){
 		$user->logout();
 	}
 
-	redirect('index.php');
+	redirect('index.html');
 }
 
 
@@ -131,37 +131,3 @@ catch(Exception $e){
 
 ?>
 
-<!DOCTYPE html>
-<html>
-
-	<head>
-		<meta charset="utf-8"/>
-		<title>Guest Book</title>
-
-		<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-
-		<link href="assets/css/style.css" rel="stylesheet" />
-
-	</head>
-
-	<body>
-
-		<form id="login-register" method="post" action="index.php">
-
-			<h1>Login or Register</h1>
-
-			<input type="text" placeholder="your@email.com" name="email" autofocus />
-			<p>Enter your email address above and we will send <br />you a login link.</p>
-
-			<button type="submit">Login / Register</button>
-
-			<span></span>
-
-		</form>
-        
-		<!-- JavaScript Includes -->
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-		<script src="assets/js/script.js"></script>
-
-	</body>
-</html>

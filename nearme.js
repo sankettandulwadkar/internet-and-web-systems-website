@@ -1,5 +1,6 @@
 $(document).ready(function(){
 	//using Google Places API to find car dealers near me
+	document.getElementById("guestbook_email").value = "";
 	document.getElementById("carType").value = "";
 	document.getElementById("distance").value = "";
 

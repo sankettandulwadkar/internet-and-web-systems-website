@@ -20,7 +20,7 @@ html{
 	background-size:cover;
 }
 
-body{
+#tab3{
 	font:15px/1.3 'Open Sans', sans-serif;
 	color: #fff;
 	min-height:100%;
@@ -186,7 +186,7 @@ section, footer, header, aside{
 -----------------------------*/
 
 
-footer{
+/*footer{
 
 	width: 770px;
 	font: normal 16px Arial, Helvetica, sans-serif;
@@ -258,4 +258,4 @@ footer #tzine-actions iframe{
 	position: relative;
 	float: left;
 	margin-top: 11px;
-}
+}*/

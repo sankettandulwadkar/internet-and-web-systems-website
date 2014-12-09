@@ -27,6 +27,10 @@
       <!-- for location of dealers -->
       <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
 
+      <!-- For guestbook -->
+    
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet" />
 
   </head>
   <body class="body-class">
@@ -56,12 +60,25 @@
             </article>
             <article id="tab3">
                   
-                <br><br><br><br><br><br>
-                <p align="center">  
-                <a target="_blank" href="index.php">Go to Guest Book</a>
-                </p>
+                    <form id="login-register" method="post" action="index.php">
+
+                      <h1>Login or Register</h1>
+
+                      <input type="text" placeholder="your@email.com" id="guestbook_email" name="email" autofocus />
+                      <p>Enter your email address above and we will send <br />you a login link.</p>
+
+                      <button type="submit">Login / Register</button>
+
+                      <span></span>
+
+                    </form>
+                        
+                    <!-- JavaScript Includes -->
+                    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+                    <script src="assets/js/script.js"></script>
 
             </article>
+
             <article id="tab4">
               <br><br><br><br><br>
               <p align="center">How many cars do you want to compare?
