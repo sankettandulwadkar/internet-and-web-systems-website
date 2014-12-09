@@ -14,6 +14,13 @@
       <script type="text/javascript" src="geolocation.js"></script>
       <script type="text/javascript" src="nearme.js"></script>
 
+      <script type="text/javascript">
+       var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
+          if (mobile) {
+              alert("You are now viewing mobile version of the website!");
+          }
+      </script>
+
       <style>
         #map { width:100%; height:800px; }
 
